@@ -12,7 +12,7 @@ export function Aside() {
   ];
 
   return (
-    <aside className="hidden md:flex md:w-48 flex-col border-r border-gray-200 bg-white-950/80">
+    <aside className="hidden md:flex md:w-50 flex-col border-r border-gray-200 bg-white-950/80">
       <nav className="flex-1 px-2 space-y-1">
         {items.map((item) => {
           const active = pathname === item.href;
