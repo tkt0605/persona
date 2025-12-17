@@ -12,8 +12,8 @@ export function Aside() {
   ];
 
   return (
-    <aside className="hidden md:flex md:w-50 flex-col border-r border-gray-200 bg-white-950/80">
-      <nav className="flex-1 px-2 space-y-1">
+    <aside className="hidden md:flex md:w-50 flex-col h-screen border-r border-gray-200 dark:border-gray-700  bg-white-950/80">
+      <nav className="flex-1 px-2 space-y-1 overflow-y-auto">
         {items.map((item) => {
           const active = pathname === item.href;
           return (
@@ -21,8 +21,8 @@ export function Aside() {
               key={item.href + item.label}
               href={item.href}
               className={`block rounded-md px-3 py-2 text-sm ${active
-                  ? "bg-gray-200"
-                  : " hover:bg-gray-200/70"
+                  ? "bg-gray-200 dark:bg-gray-800"
+                  : " hover:bg-gray-200/70 dark:hover:bg-gray-800/70"
                 }`}
             >
               {item.label}
