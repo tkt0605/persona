@@ -1,0 +1,84 @@
+.persona-creation {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: system-ui, sans-serif;
+}
+
+.persona-creation h1 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.mbti-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+  margin: 1.5rem 0;
+}
+
+.mbti-button {
+  padding: 0.8rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.mbti-button:hover {
+  border-color: #6366f1;
+}
+
+.mbti-button.is-selected {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: #fff;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #4338ca;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  background: #a5b4fc;
+  cursor: not-allowed;
+}
+
+.result-area {
+  margin-top: 2rem;
+  min-height: 4rem;
+}
+
+.result-placeholder {
+  color: #94a3b8;
+  text-align: center;
+}
+
+.result-error {
+  color: #dc2626;
+  text-align: center;
+}
+
+.result-card {
+  padding: 1.2rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.result-card h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
